@@ -1,0 +1,229 @@
+/*-------------------------------------------
+	Reset
+-------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+img,
+object,
+embed {max-width: 100%;}
+
+html {overflow-y: scroll;}
+
+ol, ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 100% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+a:hover, a:active {outline: none;}
+
+small { font-size: 100%; }
+
+strong, th { font-weight: bold; }
+
+td, td img {vertical-align: top;} 
+
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+button, input, select, textarea {margin: 0;}
+
+button {width: auto; overflow: visible;}
+ 
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+.group:before, .group:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.group:after { clear: both; }  
+.group { zoom: 1; }  
+
+
+/*-------------------------------------------
+	Base
+-------------------------------------------*/
+
+
+html { background: rgb(229, 229, 229) url(../media/background.png) center top repeat-y; }
+
+body {
+	font-size: 10px;
+	line-height: 12px;
+	font-family: "Franklin Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: rgb(0, 0, 0);
+	}
+
+#page { border-top: 5px solid rgb(0, 0, 0); }
+
+.inner-wrap {
+	padding-top: 40px;
+	border-top: 2px solid rgb(153, 204, 0);
+	}
+
+.border {
+	width: 1130px;
+	height: 50px;
+	background: rgb(255, 255, 255);
+	margin: 0 auto;
+	}
+
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	}
+
+a:hover {}
+
+::-moz-selection {
+	color: rgb(255, 255, 255);
+	background: #fcd700;
+	text-shadow: none;
+	}
+
+::selection {
+	color: rgb(255, 255, 255);
+	background: #fcd700;
+	text-shadow: none;
+	} 
+
+a:link { -webkit-tap-highlight-color: #fcd700; } 
+
+ins {
+	color: #000;
+	background-color: #fcd700;
+	text-decoration: none;
+	}
+
+mark {
+	color: #000;
+	background-color: #fcd700;
+	font-style: italic;
+	font-weight: bold;
+	}
+
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {
+	width: 936px;
+	margin: 0 auto;
+	background: rgb(255, 255, 255);
+	}
+
+	h1 {
+		float: left;
+		width: 586px;
+		text-indent: -9999px;
+		}
+
+		h1 span {
+			display: block;
+			width: 399px;
+			height: 500px;
+			background: url(../media/logo.png) left center no-repeat;
+			}
+
+	.url {
+		float: right;
+		display: table;
+		font-size: 22px;
+		line-height: 26px;
+		}
+
+	.ie .url { display: block; }
+
+		.url a {
+			display: table-cell;
+			width: 350px;
+			height: 500px;
+			color: rgb(255, 255, 255);
+			text-align: center;
+			background: rgb(0, 0, 0);
+			vertical-align: middle;
+			}
+
+		/* Fallback for IE browsers that do not support display: table-cell */
+
+		.ie .url a {
+			display: block;
+			width: 350px;
+			height: 262px;
+			padding-top: 238px;
+			color: rgb(255, 255, 255);
+			text-align: center;
+			background: rgb(0, 0, 0);
+			vertical-align: middle;
+			}
+
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+	width: 936px;
+	margin: 0 auto;
+	padding: 10px 0;
+	}
+
+	.copyright {
+		font-size: 10px;
+		line-height: 12px;
+		font-family: Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
